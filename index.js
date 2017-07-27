@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'merge'
+  name: 'merge',
+
+  included() {
+    this._super.included.apply(this, arguments);
+  }
 };
